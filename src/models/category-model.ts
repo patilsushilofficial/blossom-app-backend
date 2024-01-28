@@ -1,11 +1,11 @@
-import mongoose, { Schema } from "mongoose";
+import mongoose, { Schema } from "mongoose"
 
 const categorySchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
   },
-  isEdiatble: {
+  isEditable: {
     type: Boolean,
     required: false,
     default: true,
@@ -25,8 +25,8 @@ const categorySchema = new mongoose.Schema({
     ref: "User",
     required: true,
   },
-});
+})
 
-const Category = mongoose.model("Category", categorySchema);
+const Category = mongoose.model("Category", categorySchema)
 
-export default Category;
+export default Category
